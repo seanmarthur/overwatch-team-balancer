@@ -3,11 +3,13 @@
     </div>
 <div class="col-sm-7">
     <button class="btn btn-lg btn-success pull-right" ng-click="$ctrl.teamBalanceService.balance($ctrl.Team1, $ctrl.Team2)">Balance!</button>
-    <button class="btn btn-sm btn-default pull-right" ng-click="$ctrl.loadTestData()">Test Data</button>
 </div>
 <div class="col-sm-offset-1 col-sm-5">
     <team team="$ctrl.Team1"></team>
 </div>
 <div class="col-sm-5">
     <team team="$ctrl.Team2"></team>
+</div>
+<div class="col-xs-12">
+    <button class="btn btn-sm btn-default pull-right" ng-click="$ctrl.loadTestData()">Load Test Data</button>
 </div>
