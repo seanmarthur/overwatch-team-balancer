@@ -1,0 +1,19 @@
+@import '../../_globals.scss';
+.rank-badge {
+    font-family: $font-stack;
+    height: 60px;
+    position: relative;
+    img {
+        width: auto;
+        height: 100%;
+    }
+    .rank-icon {
+        vertical-align: top;
+        height: 60%
+    }
+    .rank-sr {
+        font-size: 20px;
+        vertical-align: top;
+        line-height: 100%;
+    }
+}

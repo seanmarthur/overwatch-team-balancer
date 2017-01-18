@@ -1,0 +1,18 @@
+@import '../../_globals.scss';
+.team-header {
+    height: 60px;
+    
+}
+.team-name {
+    font-family: $font-stack;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 28px;
+    input {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+        padding: 1px 10px;
+    }
+}

@@ -1,0 +1,21 @@
+@import './_globals.scss';
+@font-face {
+    font-family: 'BigNoodle';
+    src: url('./fonts/big_noodle_titling_oblique.woff') format('woff'), url('./fonts/big_noodle_titling_oblique.ttf') format('truetype');
+}
+
+
+html {
+    background-image: url('./images/ow-bg.jpg');
+}
+body {
+    background-color: initial;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.ow-header {
+    padding: 0.2em;
+    font-family: $font-stack;
+    font-size: 48px;
+}

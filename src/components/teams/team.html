@@ -1,0 +1,16 @@
+<div class="team-header">
+    <rank-icon class="pull-left" sr="$ctrl.team.averageSR" rank="$ctrl.team.teamRank" ng-show="$ctrl.team.Players.length"></rank-icon>
+    <h3 class="team-name">
+        <span ng-hide="$ctrl.editing">{{$ctrl.team.Name}}</span>
+        <div class="input-group" ng-show="$ctrl.editing">
+            <input class="form-control" type="text" ng-model="$ctrl.team.Name" />
+            <span class="input-group-btn">
+                <button class="btn btn-primary pull-right" ng-click="$ctrl.editing = !$ctrl.editing">Save</button> 
+            </span>
+        </div>
+        
+        <button class="btn btn-primary pull-right" ng-hide="$ctrl.editing" ng-click="$ctrl.editing = !$ctrl.editing">Edit</button> 
+    </h3>
+</div>
+
+<player ng-repeat="player in $ctrl.team.Players" player="player" team="$ctrl.team" on-remove="$ctrl.team.Players.splice($index, 1)"></player>

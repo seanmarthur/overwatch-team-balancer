@@ -1,0 +1,10 @@
+<div class="input-group">
+    <input class="form-control" type="text" placeholder="Case Sensitive BattleTag (e.g. apples#1678)"
+            ng-keyup="$event.keyCode == 13 && $ctrl.addPlayer($ctrl.battleTag)"
+            ng-disabled="$ctrl.disabled" ng-model="$ctrl.battleTag" />
+    <span class="input-group-btn">
+        <button class="btn btn-default" ng-disabled="$ctrl.disabled" ng-click="$ctrl.addPlayer($ctrl.battleTag)">Add</button>
+    </span>
+</div>
+<div class="text-info" ng-show="$ctrl.searching">Searching...</div>
+<div class="text-danger" ng-show="$ctrl.noneFound">Player not found! Battle tag is CASE Sensitive! Try again.</div>

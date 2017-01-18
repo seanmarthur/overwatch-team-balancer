@@ -1,0 +1,11 @@
+{
+    "ranks": {
+        "bronze": "https://blzgdapipro-a.akamaihd.net/game/rank-icons/season-2/rank-1.png",
+        "silver": "https://blzgdapipro-a.akamaihd.net/game/rank-icons/season-2/rank-2.png",
+        "gold": "https://blzgdapipro-a.akamaihd.net/game/rank-icons/season-2/rank-3.png",
+        "platinum": "https://blzgdapipro-a.akamaihd.net/game/rank-icons/season-2/rank-4.png",
+        "diamond": "https://blzgdapipro-a.akamaihd.net/game/rank-icons/season-2/rank-5.png",
+        "master": "https://blzgdapipro-a.akamaihd.net/game/rank-icons/season-2/rank-6.png",
+        "grandmaster": "https://blzgdapipro-a.akamaihd.net/game/rank-icons/season-2/rank-7.png"
+    }
+}
