@@ -7,7 +7,7 @@ module.exports = {
     entry: "./src/app.js",
     output: {
         path: __dirname + '/dist',
-        filename: "bundle.js"
+        filename: "bundle.js?v=[hash]"
     },
     module: {
         loaders: [
