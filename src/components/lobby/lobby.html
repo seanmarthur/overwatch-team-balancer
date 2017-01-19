@@ -1,15 +1,19 @@
-<div class="col-sm-4">
+<div class="row">
+    <div class="col-sm-4">
         <player-input on-lookup="$ctrl.playerFound(player)" input-disabled="$ctrl.Team1.full && $ctrl.Team2.full"></player-input>
     </div>
-<div class="col-sm-7">
-    <button class="btn btn-lg btn-success pull-right" ng-click="$ctrl.teamBalanceService.balance($ctrl.Team1, $ctrl.Team2)">Balance!</button>
+    <div class="col-sm-7">
+        <button class="btn btn-lg btn-success pull-right" ng-click="$ctrl.teamBalanceService.balance($ctrl.Team1, $ctrl.Team2)">Balance!</button>
+    </div>
 </div>
-<div class="col-sm-offset-1 col-sm-5">
-    <team team="$ctrl.Team1"></team>
-</div>
-<div class="col-sm-5">
-    <team team="$ctrl.Team2"></team>
-</div>
-<div class="col-xs-12">
-    <button class="btn btn-sm btn-default pull-right" ng-click="$ctrl.loadTestData()">Load Test Data</button>
+<div class="row">
+    <div class="col-sm-offset-1 col-sm-5">
+        <team team="$ctrl.Team1"></team>
+    </div>
+    <div class="col-sm-5">
+        <team team="$ctrl.Team2"></team>
+    </div>
+    <div class="col-xs-12">
+        <button class="btn btn-sm btn-default pull-right" ng-click="$ctrl.loadTestData()">Load Test Data</button>
+    </div>
 </div>

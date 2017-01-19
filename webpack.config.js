@@ -45,6 +45,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Overwatch Team Balancer',
+            favicon: './src/favicon.ico',
             template: './src/index.html'
         }),
         new ngAnnotatePlugin({

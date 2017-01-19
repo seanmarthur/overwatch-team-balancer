@@ -1,6 +1,7 @@
 <div class="player-card" ng-class="$ctrl.team.Color" ng-mouseenter="$ctrl.hovering = true;" ng-mouseleave="$ctrl.hovering = false;">
     <img class="img-responsive pull-left" ng-src="{{$ctrl.player.AvatarUrl}}" />
-    <span class="player-battle-tag">{{$ctrl.player.BattleTag.replace('-', '#')}}</span>
+    <!-- Input to allow easier text selection to copy/paste. This is styled to 'blend in' with rest of component. -->
+    <input type="text" class="player-battle-tag" readonly="readonly" value="{{$ctrl.player.BattleTag.replace('-', '#')}}" />
     <rank-icon class="pull-right" sr="$ctrl.player.SR" rank="$ctrl.player.Tier"></rank-icon>
     <div ng-show="$ctrl.hovering" class="player-card-overlay-buttons">
         <span class="player-card-overlay-button" ng-click="$ctrl.onRemove()">

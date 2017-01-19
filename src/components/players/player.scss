@@ -23,6 +23,10 @@
 }
 .player-battle-tag {
     padding-left: 0.2em;
+    border: none;
+    background-color: inherit;
+    height: 1em;
+    cursor: text;
 }
 .player-card-overlay-buttons {
     position: absolute;
