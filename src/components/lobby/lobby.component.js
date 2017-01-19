@@ -26,7 +26,19 @@ class controller {
     }
     addPlayerToTeam (player) {
         if(!this.Team1.hasPlayer(player) && !this.Team2.hasPlayer(player)) {
-            this.teamFlag ? this.Team1.addPlayer(player) : this.Team2.addPlayer(player);
+            // Flip between adding to each team. If a team is full, add to the other team.
+            if(this.teamFlag) {
+                let added = this.Team1.addPlayer(player);
+                if(!added) {
+                    this.Team2.addPlayer(player)
+                }
+            }
+            else {
+                let added = this.Team2.addPlayer(player);
+                if(!added) {
+                    this.Team1.addPlayer(player)
+                }
+            }
             // Flip so next player goes into other team
             this.teamFlag = !this.teamFlag;
         }

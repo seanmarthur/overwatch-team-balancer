@@ -46,6 +46,11 @@ export default class Player {
             this.AvatarUrl = avatar;
             this.SR = sr;
             this.Tier = tier;
+            
+            // If the player has not played this season, default to 2500
+            if(!this.SR) {
+                this.SR = 2500;
+            }
         }
     }
 }

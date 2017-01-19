@@ -1,4 +1,5 @@
 <div class="rank-badge">
-    <img class="rank-icon img-responsive" ng-src="{{$ctrl.icons.ranks[$ctrl.rank]}}" />
+    <img class="rank-icon img-responsive" ng-src="{{$ctrl.icons.ranks[$ctrl.rank]}}" ng-if="$ctrl.rank !== null"/>
+    <i class="rank-icon img-responsive glyphicon glyphicon-question-sign" ng-if="$ctrl.rank === null"></i>
     <span class="rank-sr">{{$ctrl.sr}}</span>
 </div>
